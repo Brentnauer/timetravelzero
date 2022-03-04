@@ -19,11 +19,11 @@ function PlayerStateFree(){
 	
 	//Update index
 	PlayerAnimateSprite();
-}
-
-//Change state
-if (keyActivate)
-{
-	state = PlayerStateRoll;
-	moveDistanceRemaining = distanceRoll;
+	
+	//Change state
+	if (keyActivate)
+	{
+		state = PlayerStateRoll;
+		moveDistanceRemaining = distanceRoll;
+	}
 }
