@@ -2,9 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function PlayerAnimateSprite(){
 	//Update the sprite
-	var _cardinalDirection = floor(((direction div 45) + 1) * 0.5);
 	var _totalFrames = sprite_get_number(sprite_index) / 4;
-	image_index = localFrame + (_cardinalDirection * _totalFrames);
+	image_index = localFrame + (CARDINAL_DIR * _totalFrames);
 	localFrame += sprite_get_speed(sprite_index) / FRAME_RATE;
 	
 	//If animation would loop on next step
