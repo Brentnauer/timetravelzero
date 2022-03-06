@@ -1,4 +1,4 @@
-/// @desc Pause
+/// @desc Pause the Game
 if (keyboard_check_pressed(vk_escape))
 {
 	global.gamePaused = !global.gamePaused;
@@ -7,15 +7,16 @@ if (keyboard_check_pressed(vk_escape))
 	{
 		with (all)
 		{
-			gamePauseImageSpeed = image_speed;
-			image_speed = 0;	
+			gamePausedImageSpeed = image_speed;
+			image_speed = 0;
 		}
+		
 	}
 	else
 	{
 		with (all)
 		{
-			image_speed = gamePauseImageSpeed;
+			image_speed = gamePausedImageSpeed;	
 		}
 	}
 }
